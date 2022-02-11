@@ -3,9 +3,15 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
-body{
-background-color: #373737;
 
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    visibility: hidden;
+  }
+}
+
+body{
+  background-color: #373737;
 }
 .grid{
   margin-top:5%;
@@ -17,6 +23,7 @@ background-color: #373737;
   grid-template-areas:
       ". . . ."
       ". . . .";
+
 }
 img{
   width: 50px;
@@ -27,7 +34,6 @@ img{
 
 hr{
   position: absolute;
-  z-index: -1;
   width: 80px;
   margin-top: 140px;
 }
@@ -35,7 +41,7 @@ hr{
   margin-bottom: 70px;
 }
 .card{
-  z-index: -2;
+
   padding: 20px;
   color: white;
   background-color: #545454;
@@ -49,14 +55,13 @@ hr{
   flex-wrap: wrap;
   text-align: center;
   box-shadow: 10px 5px 5px #252525;
-
 }
 svg{
   width: 20px;
   fill: white;
 }
 .btn{
-  z-index: -1;
+
   position:absolute;
   margin-top: 200px;
   background-color:#757575 ;
@@ -67,7 +72,6 @@ svg{
 }
 .btn:hover{
     animation: shadow 500ms ease-in-out both alternate;
-
 }
 @keyframes shadow {
   0% {box-shadow: 0px 0px 0px #252525;}

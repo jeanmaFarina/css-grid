@@ -3,11 +3,11 @@
   padding: 0;
 }
 body{
-background-color: #434343;
+background-color: #373737;
 
 }
 .grid{
-  margin-top:100px;
+  margin-top:50px;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -19,19 +19,26 @@ background-color: #434343;
 }
 img{
   width: 50px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 
 }
-hr{
-  width: 80px;
 
+hr{
+  position: absolute;
+  width: 80px;
+  margin-top: 140px;
+}
+.text{
+  margin-bottom: 70px;
 }
 .card{
+
   padding: 20px;
   color: white;
-  background-color: grey;
+  background-color: #545454;
   width: 150px;
-  height: 210px;
+  height: 220px;
   justify-self: center;
   border-radius: 8px;
   display: flex;
@@ -39,13 +46,24 @@ hr{
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
+  box-shadow: 10px 5px 5px #252525;
 
 }
 .btn{
-  margin-top: 15px;
-  background-color:#A69F9F ;
+
+  position:absolute;
+  margin-top: 200px;
+  background-color:#757575 ;
   border-radius: 19px;
   padding: 10px;
   padding-left: 15px;
   padding-right: 15px;
+}
+.btn:hover{
+    animation: shadow 500ms ease-in-out both alternate;
+
+}
+@keyframes shadow {
+  0% {box-shadow: 0px 0px 0px #252525;}
+  100% {box-shadow: 10px 5px 5px #252525;transform: scale(1.1);}
 }

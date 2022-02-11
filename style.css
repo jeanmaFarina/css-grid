@@ -39,7 +39,7 @@ hr{
   margin-bottom: 70px;
 }
 .card{
-  z-index: 300;
+
   padding: 20px;
   color: white;
   background-color: #545454;
@@ -83,7 +83,7 @@ svg{
   height: 100%;
   position: absolute;
   top: 0px;
-
+  z-index: 300;
 
 }
 .side-link{

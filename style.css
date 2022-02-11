@@ -3,13 +3,11 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
-
 @media only screen and (max-width: 768px) {
   .sidebar {
     visibility: hidden;
   }
 }
-
 body{
   background-color: #373737;
 }
@@ -41,7 +39,7 @@ hr{
   margin-bottom: 70px;
 }
 .card{
-
+  z-index: 300;
   padding: 20px;
   color: white;
   background-color: #545454;
